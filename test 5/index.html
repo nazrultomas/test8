@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmet-Five</title>
+    <script src="https://kit.fontawesome.com/d261eff5d1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+<!-- header area  -->
+    <header>
+        <header class="w-11/12 mx-auto ">
+            <div class="bg-sky-100 flex justify-between items-center p-3 px-5">
+                <div class="">
+                    <h1 class="text-5xl text-slate-900 font-bold">Interactive </h1>
+                    <h3 class="text-3xl text-slate-500 font-medium">Geometry Genius</h3>
+                </div>
+                <div class="">
+                    <button class="text-xl text-white bg-blue-500 px-5 py-2 rounded-md hover:bg-blue-600"><a
+                            href="https://prismatic-manatee-ba0147.netlify.app/Question.html"
+                            target="_blank">Blog</a></button>
+                </div>
+            </div>
+        </header>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2  sm:grid-cols-1 gap-4 w-11/12 mx-auto text-black ">
+                <!-- Triangle  -->
+
+                <div id="Triangle" class="border-2 text-center p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/triangle.png" alt="">
+                    <h1 class="text-3xl mt-4">Triangle</h1>
+                    <p class="mt-4">Area (A) = <span id="constant-number">0.5</span> * <span>b</span> * <span>h</span>
+                    </p>
+                    <p class="mt-4">b = 10cm, h = 12cm<i class="fa-sharp fa-solid fa-pen-to-square ml-2"></i> </p>
+
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="triangle-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="b" type="text">
+                        <span>cm</span>
+                        <input id="triangle-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="h"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-triangle"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-6">Calculate</button>
+                </div>
+
+                <!-- Rectangle  -->
+                <div id="Rectangle" class="border-2 text-center p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/rectangle.png" alt="">
+                    <h1 class="text-3xl mt-4">Rectangle</h1>
+                    <p class="mt-4">Area (A) = w * I</p>
+                    <p class="mt-4">b = 10cm, h = 12cm<i class="fa-sharp fa-solid fa-pen-to-square ml-2"></i> </p>
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="rectangle-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="b" type="text">
+                        <span>cm</span>
+                        <input id="rectangle-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="h"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-rectangle"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-4">Calculate</button>
+                </div>
+                <!-- Parallelogram  -->
+                <div class="border-2 text-center p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/parallelogram.png" alt="">
+                    <h1 class="text-3xl mt-4">Parallelogram</h1>
+                    <p class="mt-4">Area (A) = b * h</p>
+                    <p class="mt-4">b = 10cm, h = 12cm<i class="fa-sharp fa-solid fa-pen-to-square ml-2"></i></p>
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="parallelogram-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="b"
+                            type="text"> <span>cm</span>
+                        <input id="parallelogram-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="h"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-parallelogram"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-4">Calculate</button>
+                </div>
+                <!-- Area Calculation  -->
+                <div class="border-2 lg:row-span-2 hover-div">
+                    <h1 class="text-center font-bold mt-2 text-3xl">Area Calculation</h1><br>
+                    <hr>
+                    <div class="mt-4">
+                        <div class="flex">
+                            <div id="t_value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                        <div class="flex mt-4">
+                            <div id="r-value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                        <div class="flex mt-4">
+                            <div id="p-value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                        <div class="flex mt-4">
+                            <div id="re-value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                        <div class="flex mt-4">
+                            <div id="pe-value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                        <div class="flex mt-4">
+                            <div id="e-value">
+                                <h3 class=""> </h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rhombus  -->
+                <div class="border-2 text-center p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/rhombus.png" alt="">
+                    <h1 class="text-3xl mt-4">Rhombus</h1>
+                    <p class="my-4">Area (A) = 0.5 * d <sub>1</sub> * d <sub>2</sub>8 cm</p>
+                    <p class="my-4">d<sub>1</sub> = 16 cm d<sub>2</sub><i
+                            class="fa-sharp fa-solid fa-pen-to-square ml-2"></i></p>
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="Rhombus-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="d1" type="text">
+                        <span>cm</span>
+                        <input id="Rhombus-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="d2"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-Rhombus"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-4">Calculate</button>
+                </div>
+                <!-- Pentagon  -->
+                <div id="Pentagon" class="border-2 text-center  p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/pentagon.png" alt="">
+                    <h1 class="text-3xl mt-4">Pentagon</h1>
+                    <p class="mt-4">Area (A) = 0.5 * b * b</p>
+                    <p class="mt-4">p = 6cm, b = 10cm <i class="fa-sharp fa-solid fa-pen-to-square ml-2"></i></p>
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="Pentagon-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="p" type="text">
+                        <span>cm</span>
+                        <input id="Pentagon-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="b"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-Pentagon"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-6">Calculate</button>
+                </div>
+                <!-- Ellipse  -->
+                <div id="myElement" class="border-2 text-center p-8 rounded-lg hover-div">
+                    <img class="inline-flex" src="images/ellipse.png" alt="">
+                    <h1 class="text-3xl mt-4">Ellipse</h1>
+                    <p class="mt-4">Area (A) = &pi; ab </p>
+                    <p class="mt-4">a = 10cm, b = 4cm<i class="fa-sharp fa-solid fa-pen-to-square ml-2"></i> </p>
+                    <div class="flex gap-3 mt-4 justify-center">
+                        <input id="Ellipse-base" class="bg-slate-300 w-10 rounded px-1 " placeholder="a" type="text">
+                        <span>cm</span>
+                        <input id="Ellipse-height" class="bg-slate-300 w-10 rounded rounded px-1" placeholder="b"
+                            type="text"><span>cm <i class="fa-solid fa-square-check"></i></span>
+                    </div>
+
+                    <button id="btn-Ellipse"
+                        class="text-white bg-blue-500 px-20 py-2 rounded-md hover:bg-pink-700 mt-6">Calculate</button>
+                </div>
+                <div class="">
+
+                </div>
+            </div>
+        </section>
+        <script src="js/function.js"></script>
+         
+        <!-- END  -->
+</body>
+
+</html>
